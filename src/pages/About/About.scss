@@ -1,0 +1,46 @@
+.app__about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.about__head-text {
+  text-transform: uppercase;
+}
+
+.about__filter {
+  display: flex;
+  gap: 10px;
+  margin-top: 2rem;
+}
+
+.about__buss-filter-item {
+  font-size: large;
+  font-weight: 800;
+  cursor: pointer;
+
+  &:hover {
+    color: blue;
+  }
+}
+
+.item-active {
+  color: white;
+}
+
+.about__buss-card {
+  display: flex;
+  margin-top: 2rem;
+  gap: 2rem;
+
+  @media screen and (max-width: 450px) {
+    flex-direction: column;
+
+    img {
+      width: 50%
+    }
+  }
+    
+  
+}

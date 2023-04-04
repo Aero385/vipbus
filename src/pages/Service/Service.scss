@@ -1,0 +1,51 @@
+.app__service {
+  display: flex;
+  flex-direction: column;
+}
+
+.service__wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  
+    @media screen and (max-width: 450px) {
+    gap: 0.5rem;
+    
+  }
+}
+
+.wrapper__text {
+   display: flex;
+   flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+
+}
+
+.wrapper__img {
+ 
+  display: flex;
+  align-items: center;
+
+
+  img {
+    width: 600px;
+    height: 600px;
+
+    
+  @media screen and (max-width: 450px) {
+    width: 80%;
+    
+  }
+  }
+}
+
+.wrapper__img:nth-child(even) { 
+  
+}
+.wrapper__img:nth-child(odd)  { 
+
+}

@@ -1,1 +1,8 @@
-export { default as Navbar } from './Navbar/Navbar';
+import Navbar from './Navbar';
+import { TypingText, TitleText } from './Text';
+
+export {
+  Navbar,
+  TitleText,
+  TypingText,
+};

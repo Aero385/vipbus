@@ -1,8 +1,10 @@
-import Navbar from './Navbar';
-import { TypingText, TitleText } from './Text';
+import Navbar from './Navbar/Navbar.jsx';
+import { TypingText, TitleText } from './Text/Text.jsx';
+import { MyButton } from './MyButton/MyButton.jsx';
 
 export {
-  Navbar,
+  Navbar, 
+  TypingText, 
   TitleText,
-  TypingText,
-};
+  MyButton
+}

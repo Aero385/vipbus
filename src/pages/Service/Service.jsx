@@ -3,11 +3,14 @@ import { images } from '../../constants';
 import { motion } from 'framer-motion';
 import { busVariants, staggerContainer } from '../../utils/motion';
 import './Service.scss';
+import { TypingText } from '../../components/index.js';
+
+
 
 const Service = () => {
   return (
     <div className='app__service'>
-      
+      <TypingText title='Our fleet!'/>
       <motion.div
         variants={staggerContainer}
         initial='hidden'

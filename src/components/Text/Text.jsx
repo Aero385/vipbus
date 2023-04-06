@@ -4,7 +4,7 @@ import { textContainer, textVariant2 } from '../../utils/motion.js';
 export const TypingText = ({ title, textStyles }) => (
   <motion.p
     variants={textContainer}
-    className={`font-normal text-[14px] text-secondary-white ${textStyles}`}
+    className={`${textStyles}`}
   >
     {Array.from(title).map((letter, index) => (
       <motion.span variants={textVariant2} key={index}>
@@ -24,3 +24,7 @@ export const TitleText = ({ title, textStyles }) => (
     {title}
   </motion.h2>
 );
+
+
+////font-normal text-[14px] text-secondary-white 
+//mt-[8px] font-bold md:text-[64px] text-[40px] text-white 

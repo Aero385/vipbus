@@ -7,8 +7,7 @@
 #home {
   position: relative;
   flex: 1;
-  width: 100%;
-  height: 100%;
+
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -18,16 +17,81 @@
 }
 
 .home__head {
+  position: relative;
   
   .head__black {
     background-color: black;
     height: 110px;
   }
   img {
+    display: block;
     width: 100vw;
     object-fit: fill;
+    margin-bottom: 0;
+    filter: brightness(0.3) ;
   }
 }
+
+.head__image-text {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  justify-content: center;
+
+  h1 {
+    text-transform: uppercase;
+    font-size: 50px;
+  }
+
+  .head__experience {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin: 1.5rem 0;
+
+    p {
+      font-size: 2rem;
+    }
+  }
+
+}
+
+.home__info {
+  width: 100%;
+  background-color: var(--tiffany-color);
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+  padding: 2rem 0;
+
+    h2 {
+      color: white;
+      text-transform: uppercase;
+    }
+
+    p {
+      color: white;
+    }
+}
+
+.info-icons {
+  color: white;
+  font-size: 40px;
+  margin-right: 1rem;
+}
+
 
 
 .app__header-info {
@@ -37,7 +101,7 @@
   margin-top: 3rem;
 
  @media screen and (max-width: 450px) {
-  
+    
  }
 
   h1 {
@@ -66,21 +130,62 @@
     display: flex;
     margin-top: 2rem;
     align-self:flex-start;
-    width: fit-content;
-    color: white;
-    background: linear-gradient(to right bottom, hwb(199 36% 2%), hsl(234, 100%, 55%));
-    border-radius: 5px;
-    padding: 1rem 2rem;
-   
+}
+}
+
+.home__offer {
+  display: flex;
+  flex: 1;
+}
+
+.offer__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.offer__info {
+  margin: auto;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  position: relative;
+  padding: 3rem;
+
+  .info__headtext::before {
+    position: absolute;
+    left: 3rem;
+    content: '';
+    width: 5px;
+    height: 25%;
+    background-color: var(--secondary-color);
+  }
+  .info__headtext {
+
+    padding-left: 1rem;
+
+    span {
+      color: gray;
+    }
     
-    border: none;
-    font-size: 1.5rem;
-    cursor: pointer;
-
-    &:hover{
-
+    h1 {
+      text-transform: uppercase;
     }
   }
 
-  
+  p {
+    margin-top: 1rem;
+    font-size: 1rem;
+
+    span {
+      color: var(--secondary-color);
+    }
+  }
+}
+
+.offer__img-img {
+  max-width: 600px;
+
 }

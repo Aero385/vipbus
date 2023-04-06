@@ -11,6 +11,7 @@ import maxi1 from '../assets/maxi1.png'
 import midi1 from '../assets/midi1.png'
 import mini1 from '../assets/mini1.png'
 import van1 from '../assets/van1.png'
+import bus_info from '../assets/bus_info.png'
 
 export default {
   logo,
@@ -18,7 +19,7 @@ export default {
   eng,
   est,
   headBG,
-
+  bus_info,
   mini,
   midi,
   maxi, 

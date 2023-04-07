@@ -10,7 +10,6 @@ import { TypingText } from '../../components/index.js';
 const Service = () => {
   return (
     <div className='app__service'>
-      <TypingText title='Our fleet!'/>
       <motion.div
         variants={staggerContainer}
         initial='hidden'
@@ -22,8 +21,19 @@ const Service = () => {
           className='wrapper__text'
           variants={busVariants('left')}
         >
-          <h1>Maxi Bus</h1>
-          <div> up to 54 passengers</div>
+          <div className='text__header'>
+            <h1>1</h1>
+            <h2>Maxi Bus</h2>
+          </div>
+          <h3>45 to 54 passengers</h3>
+          <ul>
+            
+            <li>Reclining seats & panaoramic windows</li>
+            <li>Electrical outlets, WIFI</li>
+            <li>Luggage space and a restroom</li>
+          </ul>
+          
+
         </motion.div>
         <motion.div
           className='wrapper__img'
@@ -50,8 +60,17 @@ const Service = () => {
           className='wrapper__text'
           variants={busVariants('right')}
         >
-          <h1>Midi Bus</h1>
-          <div> up to 45 passengers</div>
+           <div className='text__header'>
+            <h1>2</h1>
+            <h2>Midi Bus</h2>
+          </div>
+          <h3>20 to 45 passengers</h3>
+          <ul>
+            
+            <li>Reclining seats & panaoramic windows</li>
+            <li>Electrical outlets, WIFI</li>
+            <li>Luggage space and a restroom</li>
+          </ul>
         </motion.div>
       </motion.div>
 
@@ -66,8 +85,18 @@ const Service = () => {
           className='wrapper__text'
           variants={busVariants('left')}
         >
-          <h1>Mini bus</h1>
-          <div> from 8 to 25 passengers</div>
+          <div className='text__header'>
+            <h1>3</h1>
+            <h2>Mini Bus</h2>
+          </div>
+          <h3>14 to 28 passengers</h3>
+          <ul>
+            
+            <li>DVD AM/FR stereo, Bluetooth, AUX and two monitors</li>
+            <li>comfort luxury option</li>
+            <li>leather seats and impress interior</li>
+            <li>conditioner and climate control</li>
+          </ul>
         </motion.div>
         <motion.div
           className='wrapper__img'
@@ -94,8 +123,17 @@ const Service = () => {
           className='wrapper__text'
           variants={busVariants('left')}
         >
-          <h1>Mini Van</h1>
-          <div> up to 8 passengers</div>
+          <div className='text__header'>
+            <h1>4</h1>
+            <h2>Mini Van</h2>
+          </div>
+          <h3>1 to 9 passengers</h3>
+          <ul>
+            <li>DVD AM/FR stereo, Bluetooth, AUX and two monitors</li>
+            <li>comfort luxury option</li>
+            <li>leather seats and impress interior</li>
+            <li>conditioner and climate control</li>
+          </ul>
         </motion.div>
       </motion.div>
     </div>

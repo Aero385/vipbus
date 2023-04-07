@@ -3,30 +3,39 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-color: var( --lightGray-color);
+  padding: 3rem 1rem;
 }
 
 .about__head-text {
   text-transform: uppercase;
+  margin-top: 1rem;
+  font-size: 3rem;
 }
 
 .about__filter {
   display: flex;
   gap: 10px;
   margin-top: 2rem;
+
+  span {
+    font-size: 2rem;
+  }
 }
 
 .about__buss-filter-item {
   font-size: large;
   font-weight: 800;
   cursor: pointer;
+  font-size: 2rem;
 
   &:hover {
-    color: blue;
+    color: rgb(57, 146, 219);
   }
 }
 
-.item-active {
-  color: white;
+.selected {
+  color: blue ;
 }
 
 .about__buss-card {

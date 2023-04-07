@@ -5,10 +5,11 @@ import './About.scss';
 
 const About = () => {
 
-  const allBusses = [images.maxi, images.midi, images.mini];
+  const allBusses = [images.vanIcon, images.mini, images.midi, images.maxi];
   const maxicoachBusses = [images.maxi, images.maxi, images.maxi];
   const mediumCoachBusses = [images.midi, images.midi, images.midi];
   const miniBusses = [images.mini, images.mini, images.mini];
+  const van = [images.vanIcon, images.vanIcon, images.vanIcon];
 
   const [activeFilter, setActiveFilter] = useState('All');
   const [animateCard, setAnimateCard] = useState({ x: 0, opacity: 1});
@@ -25,6 +26,8 @@ const About = () => {
       query = mediumCoachBusses;
     } else if (activeFilter === 'Mini') {
       query = miniBusses;
+    } else if (activeFilter === 'Van') {
+      query = van;
     }
     console.log(query);
     setBusses(query);
@@ -43,18 +46,21 @@ const About = () => {
   }
   return (
     <div className='app__about'>
-      <h1 className='about__head-text'>Our fleet</h1>
+      <h1 className='about__head-text'>Vehicle categories</h1>
       <div className='about__filter'>
-        {['All', 'Maxi', 'Midi', 'Mini'].map((item, index) => (
-          <div 
-            key={index}
-            onClick={() => handleBusCategory(item)}
-            className={`about__buss-filter-item app__flex p-text ${activeFilter === item ? 'item-active' : ''}`}
-          >
-            {item}
-          </div>
+        {['All', 'Maxi', 'Midi', 'Mini', 'Van'].map((item, index) => (
+          <React.Fragment key={index}>
+            <div
+              onClick={() => handleBusCategory(item)}
+              className={`about__buss-filter-item app__flex ${activeFilter === item ? 'selected' : ''}`}
+            >
+              {item}
+            </div>
+            {index !== 4 && <span>/</span>}
+          </React.Fragment>
         ))}
       </div>
+
       <motion.div 
         animate={animateCard}
         transition={{duration: 1, delayChildren: 0.5}}

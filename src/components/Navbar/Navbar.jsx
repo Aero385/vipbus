@@ -5,7 +5,7 @@ import { HiMenu, HiX} from 'react-icons/hi';
 import { motion } from 'framer-motion';
 
 
-const list = ['home', 'about', 'service', 'gallery', 'contacts'];
+const list = ['home', 'about', 'Our fleet', 'events', 'contacts'];
 const languages = [
   { lang: 'Eesti', imgSrc: images.est },
   { lang: 'English', imgSrc: images.eng },
